@@ -1,3 +1,7 @@
 node_modules/
 app.component.js.map
 app/app.component.js
+chat-room.component.js
+chat-room.component.js.map
+connect-to-chat-room.component.js
+connect-to-chat-room.component.js.map
