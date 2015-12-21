@@ -15,8 +15,7 @@ import {ChatRoom} from "./chat-room.component"
   directives: [ROUTER_DIRECTIVES]
 })
 @RouteConfig([
-  {path: '/connect', name: 'ConnectToChatRoom', component: ConnectToChatRoom},
+  {path: '/connect', name: 'ConnectToChatRoom', component: ConnectToChatRoom, useAsDefault: true},
   {path: '/chat-room', name: 'ChatRoom', component: ChatRoom}
 ])
-
 export class AppComponent{  }
