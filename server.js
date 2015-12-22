@@ -11,6 +11,14 @@ app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
 });
 
+// redirection
+app.get('/connect', function(req, res){
+  res.redirect('/');
+});
+app.get('/chat-room', function(req, res){
+  res.redirect('/');
+});
+
 io.on('connection', function(socket){
   console.log('a user connected');
 
