@@ -1,3 +1,15 @@
 <div class="well">
-  <h1>Chat room, please speak !</h1>
+  <ul id="messages">
+    <li *ngFor="#message of messages">
+      {{ message.content }}
+    </li>
+  </ul>
+  <div id="bar-typing-chat" class="row">
+    <p> Enter a message </p>
+    <form class="input-group">
+      <input [(ngModel)]="editedMessage" class="form-control" id="m" autocomplete="off">
+      <span class="input-group-addon btn btn-primary" (click)="sendMessage()"> Enter </span>
+      <input type="submit" (submit)="sendMessage()" style="display: none">
+    </form>
+  </div>
 </div>
