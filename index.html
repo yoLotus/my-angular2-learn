@@ -7,14 +7,14 @@
         width: 100%
       }
     </style>
+
     <script>document.write('<base href="' + document.location + '" />');</script>
     <title>Angular 2 QuickStart</title>
 
     <!-- 0. load CSS -->
-    <link rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
-          crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/vendor/bootstrap-3.3.6-dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="/static/css/speech_balloons.css"> -->
+    <link rel="stylesheet" href="/static/css/style.css">
 
     <!-- 1. Load libraries -->
     <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
@@ -22,6 +22,7 @@
     <script src="node_modules/rxjs/bundles/Rx.js"></script>
     <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
     <script src="node_modules/angular2/bundles/router.dev.js"></script>
+    <script src="/socket.io/socket.io.js" charset="utf-8"></script>
 
     <!-- 2. Configure SystemJS -->
     <script>
