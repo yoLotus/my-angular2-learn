@@ -8,5 +8,5 @@ connect-to-chat-room.component.js.map
 .DS_Store
 connection.service.js.map
 connection.service.js
-*.js
-*.js.map
+app/*.js
+app/*.js.map
