@@ -1,9 +1,9 @@
 <div class="well">
   <h3>Connection</h3>
   Enter a Nickname :
-  <form class="input-group">
-    <input class="form-control" type="text">
+  <form (submit)="enterChatRoom()" class="input-group">
+    <input [(ngModel)]="nickname" class="form-control" type="text">
     <span class="input-group-addon btn btn-primary" (click)="enterChatRoom()"> Enter </span>
   </form>
-  {{ clickMessage }}
+  {{ clickMessage }} {{ nickname}}
 </div>

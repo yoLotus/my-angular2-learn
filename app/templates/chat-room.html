@@ -1,6 +1,6 @@
 <div class="well">
   <ul id="messages">
-    <li *ngFor="#message of messages">
+    <li *ngFor="#message of messages()">
       <p [class.right]="message.author.id == 2" [class.left]="message.author.id == 1">
         {{ message.content }}
       <p>
